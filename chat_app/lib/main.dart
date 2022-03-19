@@ -16,6 +16,8 @@ class ChatApp extends StatelessWidget {
   }
 }
 
+
+// TODO: Move LoginPage code to it's own file
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -29,11 +31,8 @@ class LoginPage extends StatelessWidget {
           print('Button clicked');
         },
       ),
+      //TODO: Add the text and image from the design
       body: Text('Hello!'),
     );
   }
 }
-
-
-// TODO Create ChatApp widget
-// TODO Create LoginPage widget
