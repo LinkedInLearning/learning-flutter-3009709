@@ -4,6 +4,9 @@ void main() {
   runApp(const MyApp());
 }
 
+// TODO Create ChatApp widget
+// TODO Create LoginPage widget
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
