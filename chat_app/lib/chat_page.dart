@@ -20,6 +20,8 @@ class ChatPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
+
+          //TODO: Remove duplicated code
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -98,6 +100,8 @@ class ChatPage extends StatelessWidget {
                       bottomLeft: Radius.circular(12))),
             ),
           ),
+
+          //TODO: Make it sticky
           Container(
             height: 100,
             child: Row(
