@@ -89,6 +89,7 @@ class ChatPage extends StatelessWidget {
                     topRight: Radius.circular(12),
                     bottomLeft: Radius.circular(12))),
           ),
+          //TODO: Align both icons to the cornermost edge of the device width.
           Container(
             height: 100,
             child: Row(

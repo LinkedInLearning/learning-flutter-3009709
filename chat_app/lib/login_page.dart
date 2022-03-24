@@ -13,6 +13,7 @@ class LoginPage extends StatelessWidget {
           print('Button clicked');
         },
       ),
+      //TODO: Align Text and image to the vertical & horizontal centre of the device.
       body: Column(
         children: [
           Text(
@@ -23,6 +24,8 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 letterSpacing: 0.5),
           ),
+
+          //TODO: Align text to centre
           Text(
             'Welcome back! \n You\'ve been missed!',
             style: TextStyle(
