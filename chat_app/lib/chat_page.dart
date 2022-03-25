@@ -18,90 +18,93 @@ class ChatPage extends StatelessWidget {
               icon: Icon(Icons.logout))
         ],
       ),
-      body: ListView(
+      body: Column(
         children: [
-
-          //TODO: Remove duplicated code
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              padding: EdgeInsets.all(24),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'Hi, this is your message!',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+          Expanded(
+            child: ListView(
+              children: [
+                //TODO: Remove duplicated code
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Container(
+                    padding: EdgeInsets.all(24),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Hi, this is your message!',
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                        Image.network(
+                          'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                          height: 200,
+                        )
+                      ],
+                    ),
+                    margin: EdgeInsets.all(50),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                            bottomLeft: Radius.circular(12))),
                   ),
-                  Image.network(
-                    'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
-                    height: 200,
-                  )
-                ],
-              ),
-              margin: EdgeInsets.all(50),
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(12),
-                      topRight: Radius.circular(12),
-                      bottomLeft: Radius.circular(12))),
+                ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Container(
+                    padding: EdgeInsets.all(24),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Hi, this is your message!',
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                        Image.network(
+                          'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                          height: 200,
+                        )
+                      ],
+                    ),
+                    margin: EdgeInsets.all(50),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                            bottomLeft: Radius.circular(12))),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Container(
+                    padding: EdgeInsets.all(24),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Hi, this is your message!',
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                        Image.network(
+                          'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                          height: 200,
+                        )
+                      ],
+                    ),
+                    margin: EdgeInsets.all(50),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                            bottomLeft: Radius.circular(12))),
+                  ),
+                ),
+              ],
             ),
           ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Container(
-              padding: EdgeInsets.all(24),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'Hi, this is your message!',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                  Image.network(
-                    'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
-                    height: 200,
-                  )
-                ],
-              ),
-              margin: EdgeInsets.all(50),
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(12),
-                      topRight: Radius.circular(12),
-                      bottomLeft: Radius.circular(12))),
-            ),
-          ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Container(
-              padding: EdgeInsets.all(24),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'Hi, this is your message!',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                  Image.network(
-                    'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
-                    height: 200,
-                  )
-                ],
-              ),
-              margin: EdgeInsets.all(50),
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(12),
-                      topRight: Radius.circular(12),
-                      bottomLeft: Radius.circular(12))),
-            ),
-          ),
-
-          //TODO: Make it sticky
           Container(
             height: 100,
             child: Row(
