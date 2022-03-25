@@ -23,6 +23,7 @@ class ChatPage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
+            //TODO: Create a dynamic sized list
             child: ListView(
               children: [
                 ChatBubble(
