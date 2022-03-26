@@ -28,6 +28,7 @@ class _CounterStatefulState extends State<CounterStateful> {
           title: Text('Counter'),
         ),
         floatingActionButton: FloatingActionButton(
+          //TODO: Provide color from parent
           child: Icon(Icons.add),
           onPressed: () {
             increment();
