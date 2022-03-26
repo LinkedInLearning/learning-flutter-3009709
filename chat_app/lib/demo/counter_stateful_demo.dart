@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CounterStateful extends StatefulWidget {
-  Color buttonColor;
+  //Widget variables should be final
+  final Color buttonColor;
 
   CounterStateful({Key? key, required this.buttonColor}) : super(key: key);
 
   @override
-  State<CounterStateful> createState() {
-    State<CounterStateful> stateClassAssociatedWithThisWidget =
-        _CounterStatefulState();
-    return stateClassAssociatedWithThisWidget;
-  }
+  State<CounterStateful> createState() => _CounterStatefulState();
 }
 
 class _CounterStatefulState extends State<CounterStateful> {
