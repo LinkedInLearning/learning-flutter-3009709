@@ -38,6 +38,9 @@ class LoginPage extends StatelessWidget {
                 'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                 height: 200,
               ),
+
+              //TODO: Add Username & Password text fields
+
               ElevatedButton(
                   onPressed: loginUser,
                   child: Text(
