@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  LoginPage({Key? key}) : super(key: key);
 
   void loginUser() {
+    print(userNameController.text);
+    print(passwordController.text);
+
     print('login successful!');
   }
+
+  final userNameController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +47,27 @@ class LoginPage extends StatelessWidget {
 
               //TODO: Add Username & Password text fields
 
+              TextField(
+                controller: userNameController,
+                decoration: InputDecoration(
+                    hintText: 'Add your username',
+                    hintStyle: TextStyle(color: Colors.blueGrey),
+                    border: OutlineInputBorder()),
+              ),
+
+              TextField(
+                controller: passwordController,
+                obscureText: true,
+                decoration: InputDecoration(
+                    hintText: 'Type your password',
+                    hintStyle: TextStyle(color: Colors.blueGrey),
+                    border: OutlineInputBorder()),
+              ),
               ElevatedButton(
                   onPressed: loginUser,
                   child: Text(
-                    'Click me!',
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                    'Login',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w300),
                   )),
               GestureDetector(
                 onTap: () {
