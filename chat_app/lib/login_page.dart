@@ -3,12 +3,18 @@ import 'package:flutter/material.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key}) : super(key: key);
 
+  final _formkey = GlobalKey<FormState>();
+
   //TODO: Validate email and username values
   void loginUser() {
-    print(userNameController.text);
-    print(passwordController.text);
+    if (_formkey.currentState != null && _formkey.currentState!.validate()) {
+      print(userNameController.text);
+      print(passwordController.text);
 
-    print('login successful!');
+      print('login successful!');
+    } else {
+      print('not successful!');
+    }
   }
 
   final userNameController = TextEditingController();
@@ -48,21 +54,43 @@ class LoginPage extends StatelessWidget {
 
               //TODO: Add Username & Password text fields
 
-              TextField(
-                controller: userNameController,
-                decoration: InputDecoration(
-                    hintText: 'Add your username',
-                    hintStyle: TextStyle(color: Colors.blueGrey),
-                    border: OutlineInputBorder()),
+              Form(
+                key: _formkey,
+                child: Column(
+                  children: [
+                    TextFormField(
+                      validator: (value) {
+                        if (value != null &&
+                            value.isNotEmpty &&
+                            value.length < 5) {
+                          return "Your username should be more than 5 characters";
+                        } else if (value != null && value.isEmpty) {
+                          return "Please type your username";
+                        }
+                        return null;
+                      },
+                      controller: userNameController,
+                      decoration: InputDecoration(
+                          hintText: 'Add your username',
+                          hintStyle: TextStyle(color: Colors.blueGrey),
+                          border: OutlineInputBorder()),
+                    ),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    TextFormField(
+                      controller: passwordController,
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          hintText: 'Type your password',
+                          hintStyle: TextStyle(color: Colors.blueGrey),
+                          border: OutlineInputBorder()),
+                    ),
+                  ],
+                ),
               ),
-
-              TextField(
-                controller: passwordController,
-                obscureText: true,
-                decoration: InputDecoration(
-                    hintText: 'Type your password',
-                    hintStyle: TextStyle(color: Colors.blueGrey),
-                    border: OutlineInputBorder()),
+              SizedBox(
+                height: 24,
               ),
               ElevatedButton(
                   onPressed: loginUser,
