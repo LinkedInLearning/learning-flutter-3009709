@@ -10,6 +10,7 @@ class LoginPage extends StatelessWidget {
       print(userNameController.text);
       print(passwordController.text);
 
+      //TODO: Navigate to ChatPage on successful login
       print('login successful!');
     } else {
       print('not successful!');
