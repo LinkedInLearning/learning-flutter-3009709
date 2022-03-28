@@ -5,7 +5,6 @@ class LoginPage extends StatelessWidget {
 
   final _formkey = GlobalKey<FormState>();
 
-  //TODO: Validate email and username values
   void loginUser() {
     if (_formkey.currentState != null && _formkey.currentState!.validate()) {
       print(userNameController.text);

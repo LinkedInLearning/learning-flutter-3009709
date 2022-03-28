@@ -17,6 +17,7 @@ class ChatInput extends StatelessWidget {
               color: Colors.white,
             ),
           ),
+          //TODO: Add multi-line TextField here
           IconButton(
             onPressed: () {},
             icon: Icon(
