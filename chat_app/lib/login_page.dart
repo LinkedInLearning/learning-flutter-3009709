@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key}) : super(key: key);
 
+  //TODO: Validate email and username values
   void loginUser() {
     print(userNameController.text);
     print(passwordController.text);
