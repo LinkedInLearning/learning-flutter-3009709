@@ -16,6 +16,7 @@ class ChatApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
               backgroundColor: Colors.blue, foregroundColor: Colors.black)),
       home: LoginPage(),
+      routes: {'/chat': (context) => ChatPage()},
     );
   }
 }
