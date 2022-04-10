@@ -11,6 +11,7 @@ class ChatPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        //TODO: Remove harcoded name here
         title: Text('Hi Pooja!'),
         actions: [
           IconButton(
