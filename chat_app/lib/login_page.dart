@@ -11,6 +11,7 @@ class LoginPage extends StatelessWidget {
       print(userNameController.text);
       print(passwordController.text);
 
+      //TODO: Replace the route instead of pushing
       Navigator.pushNamed(context, '/chat',
           arguments: '${userNameController.text}');
       print('login successful!');
