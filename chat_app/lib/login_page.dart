@@ -51,11 +51,11 @@ class LoginPage extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.blueGrey),
               ),
+              //TODO: Add correct asset file
               Image.network(
                 'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                 height: 200,
               ),
-              //TODO: Extract the common text-fields out to a reusable widget
               Form(
                 key: _formkey,
                 child: Column(
