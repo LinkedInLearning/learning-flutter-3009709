@@ -109,7 +109,6 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               ),
-              //TODO: Add Social media buttons here
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

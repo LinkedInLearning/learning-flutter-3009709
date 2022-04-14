@@ -7,7 +7,6 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final username = ModalRoute.of(context)!.settings.arguments as String;
 
     return Scaffold(
@@ -34,6 +33,7 @@ class ChatPage extends StatelessWidget {
                         alignment: index % 2 == 0
                             ? Alignment.centerLeft
                             : Alignment.centerRight,
+                        //TODO: Add more chat & author related properties here
                         message: "Hello, this is Pooja!");
                   })),
           ChatInput(),
