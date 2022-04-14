@@ -54,6 +54,7 @@ class LoginPage extends StatelessWidget {
                 'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                 height: 200,
               ),
+              //TODO: Extract the common text-fields out to a reusable widget
               Form(
                 key: _formkey,
                 child: Column(
