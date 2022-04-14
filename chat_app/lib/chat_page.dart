@@ -27,7 +27,6 @@ class ChatPage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-              //TODO: Create a dynamic sized list
               child: ListView.builder(
                   itemCount: 10,
                   itemBuilder: (context, index) {

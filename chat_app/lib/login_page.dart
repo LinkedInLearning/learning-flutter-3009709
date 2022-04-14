@@ -51,7 +51,6 @@ class LoginPage extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.blueGrey),
               ),
-              //TODO: Add correct asset file
               Image.asset(
                 'assets/illustration.png',
                 height: 200,
