@@ -107,6 +107,7 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               )
+              //TODO: Add Social media buttons here
             ],
           ),
         ),
