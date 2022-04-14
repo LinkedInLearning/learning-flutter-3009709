@@ -52,8 +52,8 @@ class LoginPage extends StatelessWidget {
                     color: Colors.blueGrey),
               ),
               //TODO: Add correct asset file
-              Image.network(
-                'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+              Image.asset(
+                'assets/illustration.png',
                 height: 200,
               ),
               Form(
