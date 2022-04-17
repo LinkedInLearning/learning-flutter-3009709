@@ -39,6 +39,9 @@ class _ChatPageState extends State<ChatPage> {
     setState(() {});
   }
 
+  //TODO: Get Network Images from API
+  _getNetworkImages() {}
+
   @override
   void initState() {
     _loadInitialMessages();
