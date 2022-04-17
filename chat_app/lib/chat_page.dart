@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 class ChatPage extends StatelessWidget {
   const ChatPage({Key? key}) : super(key: key);
 
+
+  //TODO: Create mock list
   @override
   Widget build(BuildContext context) {
     final username = ModalRoute.of(context)!.settings.arguments as String;
@@ -34,7 +36,6 @@ class ChatPage extends StatelessWidget {
                         alignment: index % 2 == 0
                             ? Alignment.centerLeft
                             : Alignment.centerRight,
-                        //TODO: Add more chat & author related properties here
                         entity: ChatMessageEntity(
                             id: '1234',
                             text: 'Hello this is Pooja!!!!!',
