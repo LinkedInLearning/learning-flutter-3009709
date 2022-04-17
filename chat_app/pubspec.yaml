@@ -37,6 +37,7 @@ dependencies:
   google_fonts: ^2.3.1
   url_launcher: ^6.0.20
   json_annotation: ^4.4.0
+  http: any
   social_media_buttons:
     git:
       url: https://github.com/nrubin29/social_media_buttons
