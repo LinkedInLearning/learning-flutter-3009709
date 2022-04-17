@@ -7,6 +7,7 @@ class ChatInput extends StatelessWidget {
 
   void onSendButtonPressed() {
     print('ChatMessage: ${chatMessageController.text}');
+    //TODO: Add this new message to the default list
   }
 
   @override
