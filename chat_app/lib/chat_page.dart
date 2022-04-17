@@ -40,6 +40,7 @@ class _ChatPageState extends State<ChatPage> {
     setState(() {});
   }
 
+  //TODO: Move this to a Repository class
   Future<List<PixelfordImage>> _getNetworkImages() async {
     var endpointUrl = Uri.parse('https://pixelford.com/api2/images');
 
