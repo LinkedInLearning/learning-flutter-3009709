@@ -19,6 +19,7 @@ class NetworkImagePickerBody extends StatelessWidget {
             return GridView.builder(
               itemCount: snapshot.data!.length,
               itemBuilder: (context, index) {
+                //TODO: Add a Gesture Detector to register clicks on each image
                 return Image.network(snapshot.data![index].urlSmallSize);
               },
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
@@ -26,7 +27,6 @@ class NetworkImagePickerBody extends StatelessWidget {
                   mainAxisSpacing: 2,
                   maxCrossAxisExtent: MediaQuery.of(context).size.width * 0.5),
             );
-            // return Image.network(snapshot.data![0].urlSmallSize);
           }
 
           return Padding(
