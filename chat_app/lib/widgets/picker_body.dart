@@ -3,8 +3,11 @@ import 'package:chat_app/repo/image_repository.dart';
 import 'package:flutter/material.dart';
 
 class NetworkImagePickerBody extends StatelessWidget {
+  final Function(String) onImageSelected;
+
   NetworkImagePickerBody({
     Key? key,
+    required this.onImageSelected,
   }) : super(key: key);
 
   final ImageRepository _imageRepo = ImageRepository();
@@ -20,7 +23,12 @@ class NetworkImagePickerBody extends StatelessWidget {
               itemCount: snapshot.data!.length,
               itemBuilder: (context, index) {
                 //TODO: Add a Gesture Detector to register clicks on each image
-                return Image.network(snapshot.data![index].urlSmallSize);
+
+                return GestureDetector(
+                    onTap: () {
+                      onImageSelected(snapshot.data![index].urlSmallSize);
+                    },
+                    child: Image.network(snapshot.data![index].urlSmallSize));
               },
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                   crossAxisSpacing: 2,
