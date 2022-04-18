@@ -19,6 +19,7 @@ class ImageRepository {
       print(_imageList[0].urlFullSize);
       return _imageList;
     } else {
+      //TODO: Handle specific exceptions
       throw Exception('API not successful!');
     }
   }
