@@ -17,6 +17,7 @@ class ChatInput extends StatelessWidget {
         createdAt: DateTime.now().millisecondsSinceEpoch,
         author: Author(userName: 'poojab26'));
 
+    //TODO: Check for image, and append it to the chat object
     onSubmit(newChatMessage);
   }
 
