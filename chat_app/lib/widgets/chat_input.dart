@@ -10,8 +10,6 @@ class ChatInput extends StatelessWidget {
 
   void onSendButtonPressed() {
     print('ChatMessage: ${chatMessageController.text}');
-    //TODO: Add this new message to the default list
-
     final newChatMessage = ChatMessageEntity(
         text: chatMessageController.text,
         id: "244",
@@ -29,7 +27,9 @@ class ChatInput extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              //TODO: Open a bottom sheet that shows a grid of images
+            },
             icon: Icon(
               Icons.add,
               color: Colors.white,
