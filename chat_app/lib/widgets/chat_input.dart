@@ -63,6 +63,7 @@ class _ChatInputState extends State<ChatInput> {
             ),
           ),
           Expanded(
+              //TODO: Add padding around inputs
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
