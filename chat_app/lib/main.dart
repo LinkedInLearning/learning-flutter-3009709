@@ -3,6 +3,7 @@ import 'package:chat_app/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  //TODO: Integrate Provider for State Management
   runApp(ChatApp());
 }
 
