@@ -55,6 +55,7 @@ class LoginPage extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.blueGrey),
               ),
+              //TODO: Make rounded borders
               Image.asset(
                 'assets/illustration.png',
                 height: 200,

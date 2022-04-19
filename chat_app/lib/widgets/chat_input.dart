@@ -24,8 +24,6 @@ class _ChatInputState extends State<ChatInput> {
         createdAt: DateTime.now().millisecondsSinceEpoch,
         author: Author(userName: 'poojab26'));
 
-    //TODO: Check for image, and append it to the chat object
-
     if (_selectedImageUrl.isNotEmpty) {
       newChatMessage.imageUrl = _selectedImageUrl;
     }
