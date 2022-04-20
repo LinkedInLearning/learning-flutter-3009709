@@ -1,7 +1,11 @@
 class AuthService {
-  void loginUser() {}
+  void loginUser() {
+    //TODO: Implement login
+  }
 
-  void logoutUser() {}
+  void logoutUser() {
+    //TODO: Implement logout
+  }
 
   String getUserName() {
     return "poojab26";
