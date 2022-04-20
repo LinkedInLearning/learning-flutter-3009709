@@ -22,4 +22,8 @@ class AuthService {
   String? getUserName() {
     return _prefs.getString('userName') ?? 'DefaultValue';
   }
+
+  void updateUserName(String newName) {
+    //TODO: Update sharedPrefs with new username
+  }
 }
