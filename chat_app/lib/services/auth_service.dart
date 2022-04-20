@@ -1,6 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
+
+  //TODO: Remove duplicate prefs initialization call
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   Future<void> loginUser(String userName) async {
