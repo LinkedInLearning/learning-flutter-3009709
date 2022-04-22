@@ -33,6 +33,8 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    //TODO: Fix UI for web version
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(

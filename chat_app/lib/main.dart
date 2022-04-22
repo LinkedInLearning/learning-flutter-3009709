@@ -23,7 +23,6 @@ class ChatApp extends StatelessWidget {
           primarySwatch: Colors.deepPurple,
           appBarTheme: AppBarTheme(
               backgroundColor: Colors.blue, foregroundColor: Colors.black)),
-      //TODO: Decide home widget based on login activity
       home: FutureBuilder<bool>(
           future: context.read<AuthService>().isLoggedIn(),
           builder: (context, AsyncSnapshot<bool> snapshot) {
