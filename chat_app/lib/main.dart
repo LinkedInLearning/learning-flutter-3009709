@@ -9,7 +9,7 @@ class ChatApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      title: "CHat App!!!",
+      title: "Chat App",
       theme: ThemeData(primarySwatch: Colors.yellow),
       home: LoginPage(),
     );
@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
           print('Button clicked');
         },
       ),
-      body: Text('Hello!'),
+      body: const Text('Hello!'),
     );
   }
 }
